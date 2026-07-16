@@ -198,20 +198,20 @@
         numbers {
             display-name = "numbers";
             bindings = <
-  &kp EXCL     &kp AT      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE         &kp KP_PLUS   &kp N7        &kp N8        &kp N9        &kp ASTRK
-  &kp HASH     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND    &kp KP_EQUAL  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SINGLE_QUOTE
-  &kp PERCENT  &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE        &kp KP_MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-                                                 &kp BACKSLASH          &kp GRAVE        &kp SPACE     &kp N0
+  &kp EXCL         &kp AT            &kp LEFT_BRACE              &kp RIGHT_BRACE                &kp PIPE         &kp KP_PLUS   &kp N7                &kp N8        &kp N9              &kp ASTRK
+  &hml LCTRL HASH  &hml LALT DOLLAR  &hml LGUI LEFT_PARENTHESIS  &hml LSHIFT RIGHT_PARENTHESIS  &kp AMPERSAND    &kp KP_EQUAL  &hmr RSHIFT NUMBER_4  &hmr RGUI N5  &hmr RALT NUMBER_6  &hmr RCTRL SINGLE_QUOTE
+  &kp PERCENT      &kp CARET         &kp LEFT_BRACKET            &kp RIGHT_BRACKET              &kp TILDE        &kp KP_MINUS  &kp NUMBER_1          &kp NUMBER_2  &kp NUMBER_3        &kp SLASH
+                                                                 &kp BACKSLASH                  &kp GRAVE        &kp SPACE     &kp N0
             >;
         };
 
         navigation {
             display-name = "navigation";
             bindings = <
-  &none  &kp C_VOLUME_DOWN  &kp K_MUTE        &kp K_VOLUME_UP  &none     &none           &none          &none         &none      &none
-  &none  &kp K_PREV         &kp K_PLAY_PAUSE  &kp K_NEXT       &none     &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none
-  &none  &kp K_CUT          &kp K_COPY        &kp K_PASTE      &none     &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none
-                                              &trans           &trans    &trans          &trans
+  &none              &kp C_VOLUME_DOWN  &kp K_MUTE              &kp K_VOLUME_UP     &none     &none           &none          &none         &none      &none
+  &hml LCTRL ESCAPE  &hml LALT K_PREV   &hml LGUI K_PLAY_PAUSE  &hml LSHIFT K_NEXT  &none     &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none
+  &none              &kp K_CUT          &kp K_COPY              &kp K_PASTE         &none     &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none
+                                                                &trans              &trans    &trans          &trans
             >;
         };
     };
