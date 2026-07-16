@@ -46,16 +46,16 @@ layers:
   - '8'
   - '9'
   - '*'
-  - '#'
-  - $
-  - (
-  - )
+  - {t: '#', h: LCTRL}
+  - {t: $, h: LALT}
+  - {t: (, h: LGUI}
+  - {t: ), h: LSHIFT}
   - '&'
   - KP EQUAL
-  - '4'
-  - '5'
-  - '6'
-  - ''''
+  - {t: '4', h: RSHIFT}
+  - {t: '5', h: RGUI}
+  - {t: '6', h: RALT}
+  - {t: '''', h: RCTRL}
   - '%'
   - ^
   - '['
@@ -81,10 +81,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - PREV
-  - PLAY PAUSE
-  - NEXT
+  - {t: ESCAPE, h: LCTRL}
+  - {t: PREV, h: LALT}
+  - {t: PLAY PAUSE, h: LGUI}
+  - {t: NEXT, h: LSHIFT}
   - ''
   - LEFT ARROW
   - DOWN
