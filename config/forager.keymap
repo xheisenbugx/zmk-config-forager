@@ -188,10 +188,10 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-  &kp Q         &kp W        &kp E             &kp R            &kp T        &kp Y      &kp U         &kp I        &kp O        &kp P
-  &hml LCTRL A  &hml LALT S  &hml LG(LCTRL) D  &hml LSHFT F     &kp G        &kp H      &hmr RSHFT J  &hmr RGUI K  &hmr RALT L  &hmr RCTRL SEMI
-  &kp Z         &kp X        &kp C             &kp V            &kp B        &kp N      &kp M         &kp COMMA    &kp DOT      &kp FSLH
-                                               &lt 1 BACKSPACE  &lt 2 TAB    &lt 2 RET  &lt 1 SPACE
+  &kp Q         &kp W        &kp E        &kp R            &kp T        &kp Y      &kp U         &kp I        &kp O        &kp P
+  &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F     &kp G        &kp H      &hmr RSHFT J  &hmr RGUI K  &hmr RALT L  &hmr RCTRL SEMI
+  &kp Z         &kp X        &kp C        &kp V            &kp B        &kp N      &kp M         &kp COMMA    &kp DOT      &kp FSLH
+                                          &lt 1 BACKSPACE  &lt 2 TAB    &lt 2 RET  &lt 1 SPACE
             >;
         };
 
@@ -200,7 +200,7 @@
             bindings = <
   &kp EXCL         &kp AT            &kp LEFT_BRACE              &kp RIGHT_BRACE                &kp PIPE         &kp KP_PLUS   &kp N7                &kp N8        &kp N9              &kp ASTRK
   &hml LCTRL HASH  &hml LALT DOLLAR  &hml LGUI LEFT_PARENTHESIS  &hml LSHIFT RIGHT_PARENTHESIS  &kp AMPERSAND    &kp KP_EQUAL  &hmr RSHIFT NUMBER_4  &hmr RGUI N5  &hmr RALT NUMBER_6  &hmr RCTRL SINGLE_QUOTE
-  &kp PERCENT      &kp CARET         &kp LEFT_BRACKET            &kp RIGHT_BRACKET              &kp TILDE        &kp KP_MINUS  &kp NUMBER_1          &kp NUMBER_2  &kp NUMBER_3        &kp SLASH
+  &kp PERCENT      &kp CARET         &kp LEFT_BRACKET            &kp RIGHT_BRACKET              &kp TILDE        &kp MINUS     &kp NUMBER_1          &kp NUMBER_2  &kp NUMBER_3        &kp SLASH
                                                                  &kp BACKSLASH                  &kp GRAVE        &kp SPACE     &kp N0
             >;
         };
