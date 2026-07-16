@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LGUI}
+  - {t: A, h: LCTRL}
   - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
+  - {t: D, h: Gui+LCTRL}
   - {t: F, h: LSHFT}
   - G
   - H
   - {t: J, h: RSHFT}
-  - {t: K, h: RCTRL}
+  - {t: K, h: RGUI}
   - {t: L, h: RALT}
-  - {t: ;, h: RGUI}
+  - {t: ;, h: RCTRL}
   - Z
   - X
   - C
@@ -31,150 +31,80 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - /
-  - {t: SPACE, h: NAV}
-  - {t: TAB, h: ADJ}
-  - {t: RET, h: SYM}
-  - {t: BSPC, h: NUM}
-  NAV:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Gui+Sft+Z
-  - Gui+V
-  - Gui+C
-  - Gui+X
-  - Gui+Z
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHFT
-  - ''
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - CAPS
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - INS
-  - HOME
-  - PG DN
-  - PG UP
-  - END
-  - {type: held}
-  - ''
-  - RET
-  - BSPC
-  NUM:
-  - '['
+  - {t: BACKSPACE, h: numbers}
+  - {t: TAB, h: navigation}
+  - {t: RET, h: navigation}
+  - {t: SPACE, h: numbers}
+  numbers:
+  - '!'
+  - '@'
+  - '{'
+  - '}'
+  - '|'
+  - KP PLUS
   - '7'
   - '8'
   - '9'
-  - ']'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ;
+  - '*'
+  - '#'
+  - $
+  - (
+  - )
+  - '&'
+  - KP EQUAL
   - '4'
   - '5'
   - '6'
-  - '='
-  - ''
-  - RSHFT
-  - RCTRL
-  - RALT
-  - RGUI
-  - '`'
+  - ''''
+  - '%'
+  - ^
+  - '['
+  - ']'
+  - '~'
+  - KP MINUS
   - '1'
   - '2'
   - '3'
-  - \
-  - ''
-  - ''
-  - ','
-  - .
-  - ''
+  - /
+  - {t: \, type: held}
+  - '`'
   - SPACE
   - '0'
-  - RET
-  - {t: BSPC, type: held}
-  SYM:
-  - '{'
-  - '&'
-  - '*'
-  - (
-  - '}'
+  navigation:
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ':'
-  - $
-  - '%'
-  - ^
-  - +
-  - ''
-  - RSHFT
-  - RCTRL
-  - RALT
-  - RGUI
-  - '~'
-  - '!'
-  - '@'
-  - '#'
-  - '|'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - (
-  - )
-  - {type: held}
-  - ''
-  ADJ:
-  - '&studio_unlock'
-  - ''
-  - ''
-  - ''
-  - ''
+  - VOLUME DOWN
   - MUTE
-  - VOL DN
-  - VOL UP
-  - PP
-  - ''
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHFT
-  - ''
-  - OUT TOG
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - '&bootloader'
-  - '&sys_reset'
-  - ''
-  - ''
-  - ''
-  - BT CLR
+  - VOLUME UP
   - ''
   - ''
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - PREV
+  - PLAY PAUSE
+  - NEXT
+  - ''
+  - LEFT ARROW
+  - DOWN
+  - UP ARROW
+  - RIGHT
+  - ''
+  - ''
+  - CUT
+  - COPY
+  - PASTE
+  - ''
+  - HOME
+  - PAGE DOWN
+  - PAGE UP
+  - END
+  - ''
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
   k: ESC
