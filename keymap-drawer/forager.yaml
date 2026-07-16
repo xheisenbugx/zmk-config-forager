@@ -28,8 +28,8 @@ layers:
   - B
   - N
   - M
-  - {t: ',', s: ;}
-  - {t: ., s: ':'}
+  - ','
+  - .
   - /
   - {t: BACKSPACE, h: numbers}
   - {t: TAB, h: navigation}
@@ -106,26 +106,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [0, 1]
+- p: [16, 17]
   k: ESC
   l: [BASE]
 - p: [13, 16]
   k: '&caps_word'
-  l: [BASE]
-- p: [7, 8]
-  k: BSPC
-  l: [BASE]
-- p: [8, 9]
-  k: DEL
-  l: [BASE]
-- p: [11, 12]
-  k: TAB
-  l: [BASE]
-- p: [17, 18]
-  k: RET
-  l: [BASE]
-- p: [16, 17]
-  k: '&num_word 2'
   l: [BASE]
 - p: [21, 22]
   k: Gui+C
@@ -136,15 +121,6 @@ combos:
 - p: [21, 23]
   k: Gui+X
   l: [BASE]
-- p: [16, 26]
-  k: '-'
-  l: [BASE]
 - p: [15, 25]
   k: _
-  l: [BASE]
-- p: [13, 23]
-  k: '='
-  l: [BASE]
-- p: [11, 21]
-  k: '`'
   l: [BASE]
