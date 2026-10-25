@@ -15,8 +15,8 @@ layers:
   - {t: S, h: LCTRL}
   - {t: D, h: LALT}
   - {t: F, h: LGUI}
-  - G
-  - H
+  - {t: G, h: Meh+LGUI}
+  - {t: H, h: Meh+LGUI}
   - {t: J, h: RIGHT GUI}
   - {t: K, h: RALT}
   - {t: L, h: RCTRL}
@@ -75,22 +75,22 @@ layers:
   - VOLUME DOWN
   - MUTE
   - VOLUME UP
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - Meh+C
+  - Meh+LEFT
+  - Meh+DOWN
+  - Meh+UP
+  - Meh+RIGHT
+  - Meh+RET
   - {t: ESCAPE, h: LSHIFT}
   - {t: PREV, h: LCTRL}
-  - {t: PLAY PAUSE, h: LALT}
+  - {t: PP, h: LALT}
   - {t: NEXT, h: LGUI}
-  - ''
+  - Meh+BSPC
   - LEFT ARROW
   - DOWN
   - UP ARROW
   - RIGHT
-  - ''
+  - Ctl+Gui+F
   - ''
   - CUT
   - COPY
@@ -100,7 +100,7 @@ layers:
   - PAGE DOWN
   - PAGE UP
   - END
-  - ''
+  - Meh+N
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
