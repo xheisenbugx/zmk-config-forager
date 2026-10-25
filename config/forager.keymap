@@ -26,6 +26,13 @@
 #define SYM  3
 #define ADJ  4
 
+// Hyper (⌃⌥⇧⌘) for app hotkeys: hold G (right-hand keys) or H (left-hand keys).
+// Meh (⌃⌥⇧) for window hotkeys on the navigation layer, bound in Raycast's
+// Window Management: arrows = halves, RET = maximize, C = center,
+// BSPC = restore, N = next display.
+#define HYPER LS(LC(LA(LGUI)))
+#define MEH(k) LS(LC(LA(k)))
+
 // Forager key positions (34 keys):
 // Row 0:  0  1  2  3  4     5  6  7  8  9
 // Row 1: 10 11 12 13 14    15 16 17 18 19
@@ -188,10 +195,10 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-  &kp Q          &kp W         &kp E        &kp R            &kp T        &kp Y      &kp U             &kp I        &kp O         &kp P
-  &hml LSHIFT A  &hml LCTRL S  &hml LALT D  &hml LGUI F      &kp G        &kp H      &hmr RIGHT_GUI J  &hmr RALT K  &hmr RCTRL L  &hmr RSHIFT SINGLE_QUOTE
-  &kp Z          &kp X         &kp C        &kp V            &kp B        &kp N      &kp M             &kp COMMA    &kp DOT       &kp FSLH
-                                            &lt 1 BACKSPACE  &lt 2 TAB    &lt 2 RET  &lt 1 SPACE
+  &kp Q          &kp W         &kp E        &kp R            &kp T          &kp Y          &kp U             &kp I        &kp O         &kp P
+  &hml LSHIFT A  &hml LCTRL S  &hml LALT D  &hml LGUI F      &hml HYPER G   &hmr HYPER H   &hmr RIGHT_GUI J  &hmr RALT K  &hmr RCTRL L  &hmr RSHIFT SINGLE_QUOTE
+  &kp Z          &kp X         &kp C        &kp V            &kp B          &kp N          &kp M             &kp COMMA    &kp DOT       &kp FSLH
+                                            &lt 1 BACKSPACE  &lt 2 TAB      &lt 2 RET      &lt 1 SPACE
             >;
         };
 
@@ -208,10 +215,10 @@
         navigation {
             display-name = "navigation";
             bindings = <
-  &none               &kp C_VOLUME_DOWN  &kp K_MUTE              &kp K_VOLUME_UP   &none     &none           &none          &none         &none      &none
-  &hml LSHIFT ESCAPE  &hml LCTRL K_PREV  &hml LALT K_PLAY_PAUSE  &hml LGUI K_NEXT  &none     &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none
-  &none               &kp K_CUT          &kp K_COPY              &kp K_PASTE       &none     &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none
-                                                                 &trans            &trans    &trans          &trans
+  &none               &kp C_VOLUME_DOWN  &kp C_MUTE          &kp C_VOLUME_UP   &kp MEH(C)     &kp MEH(LEFT)   &kp MEH(DOWN)  &kp MEH(UP)   &kp MEH(RIGHT)  &kp MEH(RET)
+  &hml LSHIFT ESCAPE  &hml LCTRL C_PREV  &hml LALT C_PP      &hml LGUI C_NEXT  &kp MEH(BSPC)  &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT       &kp LC(LG(F))
+  &none               &kp K_CUT          &kp K_COPY          &kp K_PASTE       &none          &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END         &kp MEH(N)
+                                                             &trans            &trans         &trans          &trans
             >;
         };
     };
